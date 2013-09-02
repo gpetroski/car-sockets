@@ -60,9 +60,9 @@ $(function () {
 	var ctx = canvas.getContext('2d');
 
 	var carImg = new Image();
-	carImg.src = "./images/redcar-3.png";
+	carImg.src = "./images/red.png";
 	var carImg2 = new Image();
-	carImg2.src = "./images/bluecar-3.png";
+	carImg2.src = "./images/blue.png";
 	var pos = {
 		x: centerX,
 		y: centerY - 135
