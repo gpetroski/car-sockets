@@ -102,7 +102,7 @@ var Vehicle = function() {
 	 
 		// draw it up and to the left by half the width
 		// and height of the image 
-		ctx.drawImage(this.image, -(this.image.width/2), -(this.image.height/2));
+		ctx.drawImage(this.image, -(this.image.width/2), -(this.image.height/2), this.image.width, this.image.height);
 	 
 		// and restore the co-ords to how they were when we began
 		ctx.restore(); 

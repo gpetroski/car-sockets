@@ -3,8 +3,13 @@ $(function () {
     
     var socket = $.atmosphere;
 
+    var apiUrl = "/rest/carControl/1234";
+	if(location.hostname == "localhost") {
+		apiUrl = "/car-sockets" + apiUrl;   
+	}
+    
     // We are now ready to cut the request
-    var request = { url: '/rest/carControl/1234',
+    var request = { url: apiUrl,
         contentType : "application/json",
         transport : 'websocket'};
 
@@ -61,8 +66,12 @@ $(function () {
 
 	var carImg = new Image();
 	carImg.src = "./images/red.png";
+	carImg.width = 60;
+	carImg.height = 45;
 	var carImg2 = new Image();
 	carImg2.src = "./images/blue.png";
+	carImg2.width = 60;
+	carImg2.height = 45;
 	var pos = {
 		x: centerX,
 		y: centerY - 135

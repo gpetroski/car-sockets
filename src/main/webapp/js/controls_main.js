@@ -4,8 +4,12 @@ $(function () {
     var content = $('#content');
     var socket = $.atmosphere;
 
+    var apiUrl = "/rest/carControl/1234";
+	if(location.hostname == "localhost") {
+		apiUrl = "/car-sockets" + apiUrl;   
+	}
     // We are now ready to cut the request
-    var request = { url: '/rest/carControl/1234',
+    var request = { url: apiUrl,
         contentType : "application/json",
         transport : 'websocket'};
 
