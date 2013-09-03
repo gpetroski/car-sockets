@@ -74,11 +74,11 @@ $(function () {
 	carImg2.height = 45;
 	var pos = {
 		x: centerX,
-		y: centerY - 135
+		y: centerY - 145
 	};
 	var pos2 = {
 		x: centerX,
-		y: centerY - 180
+		y: centerY - 195
 	};
 	var size = {
 		w: 75,
